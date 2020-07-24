@@ -214,7 +214,7 @@ function calculate() {
         document.getElementById('message').innerHTML = "Check again please! The value of coins in the board should match the total";
         document.getElementById('message').setAttribute('style','color: red;text-align: center;');
     } else {
-        document.getElementById('message').innerHTML = "Great Job! Smart Girl!";
+        document.getElementById('message').innerHTML = "Great Job Smarty Pants! Way to Go!";
         document.getElementById('message').setAttribute('style','color: green;text-align: center;');
     }
 }
