@@ -8,9 +8,14 @@
     <script async src="./javascript/index.js"></script>
   </head>
   <body onload="initialize();">
-    <h1 style="text-align: center;padding: 30px;;">Let's play the Money Game</h1>
+    <h1 style="text-align: center;padding: 10px;">Let's play the Money Game</h1>
+    <div style="text-align: center;">
+      Teach Kids to Count money easily with this simple Money Game. Kids learn to count penny, nickel, dime, quarter, half-dollar and dollar.
+    </div>
+    <div style="text-align: center; font-weight: bold;">
+      Roll the Dice, add coins based on the total amount and calculate. Message will be displayed if the calculation was correct or not.
+    </div>
     <div class="ui raised very padded text container segment">
-        <!-- <h2 class="ui header">Dice Roll</h2> -->
         <div class="ui three column doubling stackable grid container">
             <div class="column">
                 <p><button onclick="diceRoll();">Roll Dice</button></p>
@@ -86,7 +91,7 @@
       <div class="column" style="border: 1px solid black;">
         <p style="height: 70px; text-align: center;">
           <span>&#36;</span>1<br/>
-          <img src="./images/dollar-front.jpg" width="160px;" alt="Penny"/>
+          <img src="./images/dollar-front.jpg" width="130px;" alt="Penny"/>
         </p>
         <p style="text-align: center; padding-bottom: 10px;">
           <button class="add-margin-5" onclick="remove('dollar')">-</button>
