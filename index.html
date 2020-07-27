@@ -9,11 +9,11 @@
   </head>
   <body onload="initialize();">
     <h1 style="text-align: center;padding: 10px;">Let's play the Money Game</h1>
-    <div style="text-align: center;">
+    <div style="text-align: center; font-size: 18px;">
       Teach Kids to Count money easily with this simple Money Game. Kids learn to count penny, nickel, dime, quarter, half-dollar and dollar.
-    </div>
-    <div style="text-align: center; font-weight: bold;">
-      Roll the Dice, add coins based on the total amount and calculate. Message will be displayed if the calculation was correct or not.
+    </div><br/>
+    <div style="text-align: center; font-weight: bold; font-size: 18px;">
+      How-To: Roll the Dice, add coins based on the total amount and calculate. Message will be displayed if the calculation was correct or not. Reset button resets the game.
     </div>
     <div class="ui raised very padded text container segment">
         <div class="ui three column doubling stackable grid container">
@@ -28,7 +28,7 @@
                 <p><div id="diceTotal"></div></p>
                 <p><div id="moneyTotal" style="display: none;"></div></p>
             </div>
-            <div class="column"><button onclick="location.reload();">Clear</button></div>
+            <div class="column"><button onclick="location.reload();">Reset</button></div>
         </div>
         <p><div id="message"></div></p>
     </div>
