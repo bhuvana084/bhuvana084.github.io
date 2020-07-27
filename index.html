@@ -9,11 +9,11 @@
     <script async src="./javascript/index.js"></script>
   </head>
   <body onload="initialize();">
-    <h1 style="text-align: center;padding: 10px;">Let's play the Money Game</h1>
-    <div style="text-align: center; font-size: 18px;">
+    <h1>Let's play the Money Game</h1>
+    <div class="intro">
       Teach Kids to Count money easily with this simple Money Game. Kids learn to count penny, nickel, dime, quarter, half-dollar and dollar.
     </div><br/>
-    <div style="text-align: center; font-weight: bold; font-size: 18px;">
+    <div class="intro bold">
       How-To: Roll the Dice, add coins based on the total amount and calculate.
       Message will be displayed if the calculation was correct or not.
       <!-- <span class="ui basic red button" onclick="location.reload();">Reset</span> button resets the game. -->
@@ -23,13 +23,13 @@
       <div class="card">
         <div class="content" style="text-align: center;">
           <div class="meta">
-            <p><div id="dice1" style="display: none;"></div>
-              <div id="dice2" style="display: none;"></div></p>
+            <p><div id="dice1" class="hide"></div>
+              <div id="dice2" class="hide"></div></p>
             <p id="dice"></p>
           </div>
           <div class="description">
             <div id="diceTotal"></div>
-            <div id="moneyTotal" style="display: none;"></div>
+            <div id="moneyTotal" class="hide"></div>
           </div>
         </div>
         <div class="extra content">
@@ -65,7 +65,7 @@
         </div>
         <div class="content">
           <div class="description">
-            <div id="pennyTotal" style="display: none;"></div><div id="pennyList"></div>
+            <div id="pennyTotal" class="hide"></div><div id="pennyList"></div>
           </div>
         </div>
       </div>
@@ -87,7 +87,7 @@
         </div>
         <div class="content">
           <div class="description">
-            <div id="nickelTotal" style="display: none;"></div><div id="nickelList"></div>
+            <div id="nickelTotal" class="hide"></div><div id="nickelList"></div>
           </div>
         </div>
       </div>
@@ -109,7 +109,7 @@
         </div>
         <div class="content">
           <div class="description">
-            <div id="dimeTotal" style="display: none;"></div><div id="dimeList"></div>
+            <div id="dimeTotal" class="hide"></div><div id="dimeList"></div>
           </div>
         </div>
       </div>
@@ -131,7 +131,7 @@
         </div>
         <div class="content">
           <div class="description">
-            <div id="quarterTotal" style="display: none;"></div><div id="quarterList"></div>
+            <div id="quarterTotal" class="hide"></div><div id="quarterList"></div>
           </div>
         </div>
       </div>
@@ -153,7 +153,7 @@
         </div>
         <div class="content">
           <div class="description">
-            <div id="halfDollarTotal" style="display: none;"></div><div id="halfDollarList"></div>
+            <div id="halfDollarTotal" class="hide"></div><div id="halfDollarList"></div>
           </div>
         </div>
       </div>
@@ -175,7 +175,7 @@
         </div>
         <div class="content">
           <div class="description">
-            <div id="dollarTotal" style="display: none;"></div><div id="dollarList"></div>
+            <div id="dollarTotal" class="hide"></div><div id="dollarList"></div>
           </div>
         </div>
       </div>

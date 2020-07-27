@@ -21,7 +21,6 @@ function printNumber(number, diceName) {
     placeholder.innerHTML = number;
 }
 
-// var button = document.getElementById('rollDice');
 
 function diceRoll() {
     var result1 = dice.roll();
@@ -151,7 +150,7 @@ function add(coin) {
             addImage(coin);
             break;
     }
-
+    document.getElementById('message').innerHTML = '';
 }
 
 function remove(coin) {
@@ -205,6 +204,7 @@ function remove(coin) {
             removeImage(coin);
             break;
     }
+    document.getElementById('message').innerHTML = '';
 }
 
 function calculate() {
