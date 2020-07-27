@@ -14,91 +14,170 @@
       Teach Kids to Count money easily with this simple Money Game. Kids learn to count penny, nickel, dime, quarter, half-dollar and dollar.
     </div><br/>
     <div style="text-align: center; font-weight: bold; font-size: 18px;">
-      How-To: Roll the Dice, add coins based on the total amount and calculate. Message will be displayed if the calculation was correct or not. Reset button resets the game.
+      How-To: Roll the Dice, add coins based on the total amount and calculate.
+      Message will be displayed if the calculation was correct or not.
+      <!-- <span class="ui basic red button" onclick="location.reload();">Reset</span> button resets the game. -->
     </div>
-    <div class="ui raised very padded text container segment">
-        <div class="ui three column doubling stackable grid container">
-            <div class="column">
-                <p><button onclick="diceRoll();">Roll Dice</button></p>
-                <p><div id="dice1" style="display: none;"></div>
-                  <div id="dice2" style="display: none;"></div></p>
-                <p id="dice"></p>  
-            </div>
-            <div class="column">
-                <p><button onclick="calculate();">Calculate Total</button></p>
-                <p><div id="diceTotal"></div></p>
-                <p><div id="moneyTotal" style="display: none;"></div></p>
-            </div>
-            <div class="column"><button onclick="location.reload();">Reset</button></div>
+    <br/>
+    <div class="ui centered cards">
+      <div class="card">
+        <div class="content" style="text-align: center;">
+          <div class="meta">
+            <p><div id="dice1" style="display: none;"></div>
+              <div id="dice2" style="display: none;"></div></p>
+            <p id="dice"></p>
+          </div>
+          <div class="description">
+            <div id="diceTotal"></div>
+            <div id="moneyTotal" style="display: none;"></div>
+          </div>
         </div>
-        <p><div id="message"></div></p>
+        <div class="extra content">
+          <div class="ui two buttons">
+            <div class="ui basic green button" onclick="diceRoll();">Roll Dice</div>
+            <div class="ui basic green button" onclick="calculate();">Calculate Total</div>
+          </div>
+        </div>
+        <div class="content">
+          <div class="description">
+            <div id="message"></div>
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="ui raised segment six column doubling stackable grid container">
-      <div class="column" style="border: 1px solid black;">
-        <p style="height: 70px; text-align: center;">
-          1<span>&#162;</span><br/>
+
+    <div class="ui centered cards">
+      <div class="card">
+        <div class="content" style="text-align: center;">
           <img src="./images/penny-back.jpg" width="40px;" alt="Penny"/>
-        </p>
-        <p style="text-align: center; padding-bottom: 10px;">
-          <button class="add-margin-5" onclick="remove('penny')">-</button>
-          <button class="add-margin-5"  onclick="add('penny')">+</button>
-        </p>
-        <p class="top-border"><div id="pennyTotal" style="display: none;"></div><div id="pennyList"></div></p>
+          <div class="meta">
+            Penny
+          </div>
+          <div class="description">
+            1<span>&#162;</span>
+          </div>
+        </div>
+        <div class="extra content">
+          <div class="ui two buttons">
+            <div class="ui basic green button" onclick="add('penny')">Add</div>
+            <div class="ui basic red button" onclick="remove('penny')">Remove</div>
+          </div>
+        </div>
+        <div class="content">
+          <div class="description">
+            <div id="pennyTotal" style="display: none;"></div><div id="pennyList"></div>
+          </div>
+        </div>
       </div>
-      <div class="column" style="border: 1px solid black;">
-        <p style="height: 70px; text-align: center;">
-          5<span>&#162;</span><br/>
+      <div class="card">
+        <div class="content" style="text-align: center;">
           <img src="./images/nickel-head.jpg" width="45px;" alt="Nickel"/>
-        </p>
-        <p style="text-align: center; padding-bottom: 10px;">
-          <button class="add-margin-5" onclick="remove('nickel')">-</button>
-          <button class="add-margin-5" onclick="add('nickel')">+</button>
-        </p>
-        <p class="top-border"><div id="nickelTotal" style="display: none;"></div><div id="nickelList"></div></p>
+          <div class="meta">
+            Nickel
+          </div>
+          <div class="description">
+            5<span>&#162;</span>
+          </div>
+        </div>
+        <div class="extra content">
+          <div class="ui two buttons">
+            <div class="ui basic green button" onclick="add('nickel')">Add</div>
+            <div class="ui basic red button" onclick="remove('nickel')">Remove</div>
+          </div>
+        </div>
+        <div class="content">
+          <div class="description">
+            <div id="nickelTotal" style="display: none;"></div><div id="nickelList"></div>
+          </div>
+        </div>
       </div>
-      <div class="column" style="border: 1px solid black;">
-        <p style="height: 70px; text-align: center;">
-          10<span>&#162;</span><br/>
+      <div class="card">
+        <div class="content" style="text-align: center;">
           <img src="./images/dime-head.png" width="40px;" alt="Dime"/>
-        </p>
-        <p style="text-align: center; padding-bottom: 10px;">
-          <button class="add-margin-5" onclick="remove('dime')">-</button>
-          <button class="add-margin-5" onclick="add('dime')">+</button>
-        </p>
-        <p class="top-border"><div id="dimeTotal" style="display: none;"></div><div id="dimeList"></div></p>
+          <div class="meta">
+            Dime
+          </div>
+          <div class="description">
+            10<span>&#162;</span>
+          </div>
+        </div>
+        <div class="extra content">
+          <div class="ui two buttons">
+            <div class="ui basic green button" onclick="add('dime')">Add</div>
+            <div class="ui basic red button" onclick="remove('dime')">Remove</div>
+          </div>
+        </div>
+        <div class="content">
+          <div class="description">
+            <div id="dimeTotal" style="display: none;"></div><div id="dimeList"></div>
+          </div>
+        </div>
       </div>
-      <div class="column" style="border: 1px solid black;">
-        <p style="height: 70px; text-align: center;">
-          25<span>&#162;</span><br/>
+      <div class="card">
+        <div class="content" style="text-align: center;">
           <img src="./images/quarter-head.png" width="50px;" alt="Quarter"/>
-        </p>
-        <p style="text-align: center; padding-bottom: 10px;">
-          <button class="add-margin-5" onclick="remove('quarter')">-</button>
-          <button class="add-margin-5" onclick="add('quarter')">+</button>
-        </p>
-        <p class="top-border"><div id="quarterTotal" style="display: none;"></div><div id="quarterList"></div></p>
+          <div class="meta">
+            Quarter
+          </div>
+          <div class="description">
+            25<span>&#162;</span>
+          </div>
+        </div>
+        <div class="extra content">
+          <div class="ui two buttons">
+            <div class="ui basic green button" onclick="add('quarter')">Add</div>
+            <div class="ui basic red button" onclick="remove('quarter')">Remove</div>
+          </div>
+        </div>
+        <div class="content">
+          <div class="description">
+            <div id="quarterTotal" style="display: none;"></div><div id="quarterList"></div>
+          </div>
+        </div>
       </div>
-      <div class="column" style="border: 1px solid black;">
-        <p style="height: 70px; text-align: center;">
-          50<span>&#162;</span><br/>
+      <div class="card">
+        <div class="content" style="text-align: center;">
           <img src="./images/half-dollar.jpg" width="60px;" alt="Half Dollar"/>
-        </p>
-        <p style="text-align: center; padding-bottom: 10px;">
-          <button class="add-margin-5" onclick="remove('halfDollar')">-</button>
-          <button class="add-margin-5" onclick="add('halfDollar')">+</button>
-        </p>
-        <p class="top-border"><div id="halfDollarTotal" style="display: none;"></div><div id="halfDollarList"></div></p>
+          <div class="meta">
+            Half-Dollar
+          </div>
+          <div class="description">
+            50<span>&#162;</span>
+          </div>
+        </div>
+        <div class="extra content">
+          <div class="ui two buttons">
+            <div class="ui basic green button" onclick="add('halfDollar')">Add</div>
+            <div class="ui basic red button" onclick="remove('halfDollar')">Remove</div>
+          </div>
+        </div>
+        <div class="content">
+          <div class="description">
+            <div id="halfDollarTotal" style="display: none;"></div><div id="halfDollarList"></div>
+          </div>
+        </div>
       </div>
-      <div class="column" style="border: 1px solid black;">
-        <p style="height: 70px; text-align: center;">
-          <span>&#36;</span>1<br/>
-          <img src="./images/dollar-front.jpg" width="130px;" alt="Penny"/>
-        </p>
-        <p style="text-align: center; padding-bottom: 10px;">
-          <button class="add-margin-5" onclick="remove('dollar')">-</button>
-          <button class="add-margin-5" onclick="add('dollar')">+</button>
-        </p>
-        <p class="top-border"><div id="dollarTotal" style="display: none;"></div><div id="dollarList"></div></p>
+      <div class="card">
+        <div class="content" style="text-align: center;">
+          <img src="./images/dollar-front.jpg" width="130px;" alt="Dollar"/>
+          <div class="meta">
+            Dollar
+          </div>
+          <div class="description">
+            <span>&#36;</span>1
+          </div>
+        </div>
+        <div class="extra content">
+          <div class="ui two buttons">
+            <div class="ui basic green button" onclick="add('dollar')">Add</div>
+            <div class="ui basic red button" onclick="remove('dollar')">Remove</div>
+          </div>
+        </div>
+        <div class="content">
+          <div class="description">
+            <div id="dollarTotal" style="display: none;"></div><div id="dollarList"></div>
+          </div>
+        </div>
       </div>
     </div>
   </body>

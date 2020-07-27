@@ -211,10 +211,10 @@ function calculate() {
     total = ((pennyTotal * 0.01) + (nickelTotal * 0.05) + (dimeTotal * 0.10) + (quarterTotal * 0.25) + (halfDollarTotal * 0.50) + (dollarTotal * 1));
     document.getElementById("moneyTotal").innerHTML = '$'+total.toFixed(2);
     if (total.toFixed(2) != diceTotal.toFixed(2)) {
-        document.getElementById('message').innerHTML = "Check again please! The value of coins in the board should match the total";
+        document.getElementById('message').innerHTML = "Oops! Count & Calculate again please!";
         document.getElementById('message').setAttribute('style','color: red;text-align: center;');
     } else {
-        document.getElementById('message').innerHTML = "Great Job Smarty Pants! Way to Go!";
+        document.getElementById('message').innerHTML = "Great Job Smarty Pants!";
         document.getElementById('message').setAttribute('style','color: green;text-align: center;');
     }
 }
