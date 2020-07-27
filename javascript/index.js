@@ -188,7 +188,7 @@ function remove(coin) {
                 quarterTotal = 0;
             removeImage(coin);
             break;
-        case 'halfDollarTotal':
+        case 'halfDollar':
             halfDollarTotal--;
             if (halfDollarTotal >= 0) 
                 document.getElementById("halfDollarTotal").innerHTML = halfDollarTotal;
