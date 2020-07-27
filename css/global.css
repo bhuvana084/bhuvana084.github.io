@@ -24,3 +24,6 @@ button {
 #diceTotal, #message {
     font-size: 18px;
 }
+div.center {
+    text-align: center;
+}
