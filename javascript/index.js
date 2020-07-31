@@ -119,7 +119,7 @@ function addImage(coinName) {
     var image = document.createElement('IMG');
     image.setAttribute('src', path_to_img);
     if (coinName == 'dollar') {
-        image.setAttribute('style', 'width:50px;');
+        image.setAttribute('style', 'width:85px;');
     } else {
         image.setAttribute('style', 'width:30px;');
     }
