@@ -23,6 +23,7 @@ function printNumber(number, diceName) {
 
 
 function diceRoll() {
+    document.getElementById('diceButton').setAttribute('disabled',true);
     var result1 = dice.roll();
     printNumber(result1, 'dice1');
     var result2 = dice.roll();
@@ -31,11 +32,45 @@ function diceRoll() {
     diceTotal = diceTotal + ((result1 + result2)/100);
     document.getElementById("diceTotal").innerHTML = '$'+diceTotal.toFixed(2);
     document.getElementById('message').innerHTML = '';
+    document.getElementById('calculateButton').removeAttribute('disabled');
+    enableAdd();
+    enableRemove();
 };
 
 function initialize() {
     document.getElementById("moneyTotal").innerHTML = '$'+total+'.00';
     document.getElementById("diceTotal").innerHTML = '$'+diceTotal+'.00';
+    document.getElementById('calculateButton').setAttribute('disabled',true);
+    disableAdd();
+    disableRemove();
+}
+
+function disableAdd() {
+    var i;
+    for (i = 0; i < document.getElementsByClassName('ui green button coin').length; i++) {
+        document.getElementsByClassName('ui green button coin')[i].setAttribute('disabled',true);
+    }
+}
+
+function disableRemove() {
+    var i;
+    for (i = 0; i < document.getElementsByClassName('ui orange button coin').length; i++) {
+        document.getElementsByClassName('ui orange button coin')[i].setAttribute('disabled',true);
+    }
+}
+
+function enableAdd() {
+    var i;
+    for (i = 0; i < document.getElementsByClassName('ui green button coin').length; i++) {
+        document.getElementsByClassName('ui green button coin')[i].removeAttribute('disabled');
+    }
+}
+
+function enableRemove() {
+    var i;
+    for (i = 0; i < document.getElementsByClassName('ui orange button coin').length; i++) {
+        document.getElementsByClassName('ui orange button coin')[i].removeAttribute('disabled');
+    }
 }
 
 function showDice(result1, result2) {
@@ -216,5 +251,9 @@ function calculate() {
     } else {
         document.getElementById('message').innerHTML = "Great Job Smarty Pants!";
         document.getElementById('message').setAttribute('style','color: green;text-align: center;');
+        document.getElementById('diceButton').removeAttribute('disabled');
+        document.getElementById('calculateButton').setAttribute('disabled',true);
+        disableAdd();
+        disableRemove();
     }
 }

@@ -35,8 +35,8 @@
         </div>
         <div class="extra content">
           <div class="ui two buttons">
-            <button class="ui orange button" onclick="diceRoll();">Roll Dice</button>
-            <button class="ui green button" onclick="calculate();">Calculate</button>
+            <button id="diceButton" class="ui green button" onclick="diceRoll();">Roll Dice</button>
+            <button id="calculateButton" class="ui orange button" onclick="calculate();">Calculate</button>
           </div>
         </div>
         <div class="content">
@@ -59,9 +59,9 @@
           </div>
         </div>
         <div class="extra content">
-          <div class="ui two buttons">
-            <div class="ui basic green button" onclick="add('penny')">Add</div>
-            <div class="ui basic red button" onclick="remove('penny')">Remove</div>
+          <div class="ui two buttons" id="penny">
+            <button class="ui green button coin" onclick="add('penny')">Add</button>
+            <button class="ui orange button coin" onclick="remove('penny')">Remove</button>
           </div>
         </div>
         <div class="content">
@@ -82,8 +82,8 @@
         </div>
         <div class="extra content">
           <div class="ui two buttons">
-            <div class="ui basic green button" onclick="add('nickel')">Add</div>
-            <div class="ui basic red button" onclick="remove('nickel')">Remove</div>
+            <button class="ui green button coin" onclick="add('nickel')">Add</button>
+            <button class="ui orange button coin" onclick="remove('nickel')">Remove</button>
           </div>
         </div>
         <div class="content">
@@ -104,8 +104,8 @@
         </div>
         <div class="extra content">
           <div class="ui two buttons">
-            <div class="ui basic green button" onclick="add('dime')">Add</div>
-            <div class="ui basic red button" onclick="remove('dime')">Remove</div>
+            <button class="ui green button coin" onclick="add('dime')">Add</button>
+            <button class="ui orange button coin" onclick="remove('dime')">Remove</button>
           </div>
         </div>
         <div class="content">
@@ -126,8 +126,8 @@
         </div>
         <div class="extra content">
           <div class="ui two buttons">
-            <div class="ui basic green button" onclick="add('quarter')">Add</div>
-            <div class="ui basic red button" onclick="remove('quarter')">Remove</div>
+            <button class="ui green button coin" onclick="add('quarter')">Add</button>
+            <button class="ui orange button coin" onclick="remove('quarter')">Remove</button>
           </div>
         </div>
         <div class="content">
@@ -148,8 +148,8 @@
         </div>
         <div class="extra content">
           <div class="ui two buttons">
-            <div class="ui basic green button" onclick="add('halfDollar')">Add</div>
-            <div class="ui basic red button" onclick="remove('halfDollar')">Remove</div>
+            <button class="ui green button coin" onclick="add('halfDollar')">Add</button>
+            <button class="ui orange button coin" onclick="remove('halfDollar')">Remove</button>
           </div>
         </div>
         <div class="content">
@@ -170,8 +170,8 @@
         </div>
         <div class="extra content">
           <div class="ui two buttons">
-            <div class="ui basic green button" onclick="add('dollar')">Add</div>
-            <div class="ui basic red button" onclick="remove('dollar')">Remove</div>
+            <button class="ui green button coin" onclick="add('dollar')">Add</button>
+            <button class="ui orange button coin" onclick="remove('dollar')">Remove</button>
           </div>
         </div>
         <div class="content">
